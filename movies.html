@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movee — Кинотеатр для всей семьи!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/png" href="Icons/movee.png">
+</head>
+
+<body>
+    <div id="centered-block">
+        <!--Центрирование основного контента сайта-->
+        <header>
+            <nav id="header-menu">
+                <div class="nav-left-side">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+
+                    <div class="logo">
+                        <img src="Icons/movee.png" alt="">
+                        <p>movee</p>
+                    </div>
+                    <ul class="menu-block">
+                        <li class="menu-element"><a href="index.html">Главная</a></li>
+                        <li class="menu-element selected"><a href="movies.html">Фильмы</a></li>
+                        <li class="menu-element"><a href="#">Сериалы</a></li>
+                        <li class="menu-element"><a href="#">ТВ</a></li>
+                    </ul>
+                </div>
+                <div class="centered-search">
+                    <img src="Icons/search.png" alt="">
+                    <p>Фильмы, сериалы и т.д.</p>
+                </div>
+                <div class="nav-right-side">
+                    <div class="search">
+                        <img src="Icons/search.png" alt="">
+                        <p>Фильмы, сериалы и т.д.</p>
+                    </div>
+                    <div class="search small">
+                        <img src="Icons/search.png" alt="">
+                    </div>
+                    <button class="button2 subsc" type="button" onclick="document.location='subscription.html'">
+                        <img src="Icons/subscription.png" alt="subscription">
+                        <p>Месяц за 1&#x20bd;</p>
+                    </button>
+                    <button class="button3 subsc" type="button" onclick="document.location='subscription.html'">
+                        <img src="Icons/subscription.png" alt="subscription">
+                    </button>
+
+                    <div class="cart">
+                        <button class="button5" type="button">
+                            <img src="Icons/cart.png" alt="cart">
+                        </button>
+
+                        <div class="cart-popup">
+                            <h3>Фильмы в корзине</h3>
+                            <div id="cart">
+                                <div class="movie-card">
+                                    <div class="card-info">
+                                        <img src="Icons/bag.png" alt="bag">
+                                        <span>
+                                            <p>Название фильма</p>
+                                            <p>Стоимость</p>
+                                        </span> 
+                                    </div>
+                                    <div class="card-manipulations">
+                                        <button class="button3" type="button"><img src="Icons/trash-can.png" alt="remove"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-manipulations">
+                                <p id="total-cost">Общая стоимость</p>
+
+                                <button class="button2" type="button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notifications">
+                        <button class="button5" type="button">
+                            <img src="Icons/notification.png" alt="notification">
+                        </button>
+                        <div class="popup-window">
+                            <ul>
+                                <li>
+                                    <p>Оформите подписку и смотрите все фильмы!</p>
+                                    <button class="button1" type="button" onclick="document.location='sign-in.html'">Оформить подписку</button>
+                                </li>
+                                <li><p>Смотрите новинки в лучшем качестве!</p></li>
+                            </ul>
+                            <a href="#">Смотреть все уведомления</a>
+                        </div>
+                    </div>
+
+                    <div class="account">
+                        <a href="sign-in.html">
+                            <img src="Icons/account.png" alt="account">
+                            <p>Войти</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="burger-options">
+                <nav class="sections">
+                    <div class="option-column">
+                        <h2><a href="index.html">Главная</a></h2>
+                    </div>
+                    <div class="option-column">
+                        <h2><a href="movies.html">Фильмы</a></h2>
+                        <ul class="collections">
+                            <li><a href="#">Топ 100 отличных фильмов</a></li>
+                            <li><a href="#">Топ 10 популярных комедий</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Скоро выйдут</a></li>
+                        </ul>
+                    </div>
+                    <div class="option-column">
+                        <h2><a href="#">Сериалы</a></h2>
+                        <ul class="collections">
+                            <li><a href="#">Топ 100 отличных сериалов</a></li>
+                            <li><a href="#">Топ 10 популярных сериалов</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Скоро выйдут</a></li>
+                        </ul>
+                    </div>
+                    <div class="option-column">
+                        <h2><a href="#">ТВ</a></h2>
+                        <ul class="collections">
+                            <li><a href="#">Что сейчас идёт</a></li>
+                            <li><a href="#">Популярные каналы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Реалити-шоу</a></li>
+                        </ul>
+                    </div>
+                    <div class="option-column">
+                        <h2><a href="#">Жанры</a></h2>
+                        <ul class="collections">
+                            <li><a href="#">Топ жанров</a></li>
+                            <li><a href="#">Популярные</a></li>
+                            <li><a href="#">Необычное</a></li>
+                            <li><a href="#">Лучшие драмы</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="movies-carousel">
+                <div class="title-block">
+                    <h2>Популярное</h2>
+                    <a href="#">
+                        <span class="all-content">
+                            <p>смотреть все</p>
+                            <img src="Icons/right-arrow.png" alt="see-all">
+                        </span>
+                    </a>
+                </div>
+
+                <div class="movies-container small">
+                    <div class="movie-item small">
+                        <a href="#">
+                            <img src="images/movies/guardians-of-the-galaxy.jpg" alt="movie-item small">
+                            <h2>Стражи Галактики. Часть 3</h2>
+                            <ul class="chips-list">
+                                <li class="chips-element small science-fiction">Фантастика</li>
+                                <li class="chips-element small action">Боевик</li>
+                            </ul>
+                            <p class="chips-element small rating great">8.1</p>
+                        </a>
+                        <div class="movie-trailer">
+                            <iframe src="https://rutube.ru/play/embed/567eb24a98a5b65583646869bad4b7bf" frameBorder="0"
+                                allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                                allowFullScreen>
+                            </iframe>
+                            <div class="trailer-info">
+                                <button class="button2" type="button">
+                                    <img src="Icons/play.png" alt="play">
+                                    <p>Начать просмотр</p>                                    
+                                </button>
+                                <div class="trailer-func">
+                                    <p>1:52 часа</p>
+                                    <button class="button3 plus" type="button" data-id="id1">
+                                        <img src="Icons/cart.png" alt="cart">
+                                    </button>
+                                    <button class="button3" type="button">
+                                        <img src="Icons/bookmark.png" alt="bookmark">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-item small">
+                        <a href="#">
+                            <img src="images/movies/gran-turismo.jpg" alt="movie-item small">
+                            <h2>Гран Туризмо</h2>
+                            <ul class="chips-list">
+                                <li class="chips-element small action">Боевик</li>
+                                <li class="chips-element small drama">Драма</li>
+                            </ul>
+                            <p class="chips-element small rating good">7.6</p>
+                        </a>
+                        <div class="movie-trailer">
+                            <iframe src="https://rutube.ru/play/embed/7706cadb88a10977727f4372f7e60e7b" frameBorder="0"
+                                allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                                allowFullScreen>
+                            </iframe>
+                            <div class="trailer-info">
+                                <button class="button2" type="button">
+                                    <img src="Icons/play.png" alt="play">
+                                    <p>Начать просмотр</p>                                    
+                                </button>
+                                <div class="trailer-func">
+                                    <p>1:52 часа</p>
+                                    <button class="button3 plus" type="button" data-id="id2">
+                                        <img src="Icons/cart.png" alt="cart">
+                                    </button>
+                                    <button class="button3" type="button">
+                                        <img src="Icons/bookmark.png" alt="bookmark">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-item small">
+                        <a href="#">
+                            <img src="images/movies/john-wick.jpg" alt="movie-item small">
+                            <h2>Джон Уик 4</h2>
+                            <ul class="chips-list">
+                                <li class="chips-element small action">Боевик</li>
+                                <li class="chips-element small thriller">Триллер</li>
+                            </ul>
+                            <p class="chips-element small rating good">7.6</p>
+                        </a>
+                        <div class="movie-trailer">
+                            <iframe src="https://rutube.ru/play/embed/7108d84db528fb25b18e1b1f58d64e25" frameBorder="0"
+                                allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                                allowFullScreen>
+                            </iframe>
+                            <div class="trailer-info">
+                                <button class="button2" type="button">
+                                    <img src="Icons/play.png" alt="play">
+                                    <p>Начать просмотр</p>                                    
+                                </button>
+                                <div class="trailer-func">
+                                    <p>1:52 часа</p>
+                                    <button class="button3 plus" type="button" data-id="id3">
+                                        <img src="Icons/cart.png" alt="cart">
+                                    </button>
+                                    <button class="button3" type="button">
+                                        <img src="Icons/bookmark.png" alt="bookmark">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-item small">
+                        <a href="#">
+                            <img src="images/movies/oppenheimer.jpg" alt="movie-item small">
+                            <h2>Оппенгеймер</h2>
+                            <ul class="chips-list">
+                                <li class="chips-element small drama">Драма</li>
+                                <li class="chips-element small history">История</li>
+                            </ul>
+                            <p class="chips-element small rating great">8.1</p>
+                        </a>
+                        <div class="movie-trailer">
+                            <iframe src="https://rutube.ru/play/embed/dc9a910e6cdffad772e0b69da2a98160" frameBorder="0"
+                                allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                                allowFullScreen>
+                            </iframe>
+                            <div class="trailer-info">
+                                <button class="button2" type="button">
+                                    <img src="Icons/play.png" alt="play">
+                                    <p>Начать просмотр</p>                                    
+                                </button>
+                                <div class="trailer-func">
+                                    <p>1:52 часа</p>
+                                    <button class="button3 plus" type="button" data-id="id4">
+                                        <img src="Icons/cart.png" alt="cart">
+                                    </button>
+                                    <button class="button3" type="button">
+                                        <img src="Icons/bookmark.png" alt="bookmark">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-item small">
+                        <a href="#">
+                            <img src="images/movies/puss-in-boats.jpg" alt="movie-item small">
+                            <h2>Кот в сапогах: Последнее желание</h2>
+                            <ul class="chips-list">
+                                <li class="chips-element small comedy">Комедия</li>
+                                <li class="chips-element small adventure">Приключения</li>
+                            </ul>
+                            <p class="chips-element small rating great">8.1</p>
+                        </a>
+                        <div class="movie-trailer">
+                            <iframe src="https://rutube.ru/play/embed/a0637850a1ce05ef8fe904a12c5ed5ca" frameBorder="0"
+                                allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                                allowFullScreen>
+                            </iframe>
+                            <div class="trailer-info">
+                                <button class="button2" type="button">
+                                    <img src="Icons/play.png" alt="play">
+                                    <p>Начать просмотр</p>                                    
+                                </button>
+                                <div class="trailer-func">
+                                    <p>1:52 часа</p>
+                                    <button class="button3 plus" type="button" data-id="id5">
+                                        <img src="Icons/cart.png" alt="cart">
+                                    </button>
+                                    <button class="button3" type="button">
+                                        <img src="Icons/bookmark.png" alt="bookmark">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-item small">
+                        <a href="#">
+                            <img src="images/movies/spider-man.jpg" alt="movie-item small">
+                            <h2>Человек-паук: Паутина вселенных</h2>
+                            <ul class="chips-list">
+                                <li class="chips-element small science-fiction">Фантастика</li>
+                                <li class="chips-element small action">Боевик</li>
+                            </ul>
+                            <p class="chips-element small rating great">8.4</p>
+                        </a>
+                        <div class="movie-trailer">
+                            <iframe src="https://rutube.ru/play/embed/83cadfd0733031016ec9b4146e869f0b" frameBorder="0"
+                                allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                                allowFullScreen>
+                            </iframe>
+                            <div class="trailer-info">
+                                <button class="button2" type="button">
+                                    <img src="Icons/play.png" alt="play">
+                                    <p>Начать просмотр</p>                                    
+                                </button>
+                                <div class="trailer-func">
+                                    <p>1:52 часа</p>
+                                    <button class="button3 plus" type="button" data-id="id6">
+                                        <img src="Icons/cart.png" alt="cart">
+                                    </button>
+                                    <button class="button3" type="button">
+                                        <img src="Icons/bookmark.png" alt="bookmark">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="movies-carousel">
+                <div class="title-block">
+                    <h2>Фильмы</h2>
+                    <a href="#">
+                        <span class="all-content">
+                            <p>смотреть все</p>
+                            <img src="Icons/right-arrow.png" alt="see-all">
+                        </span>
+                    </a>
+                </div>
+                <div class="movies-container medium">
+                    <div class="movie-item">
+                        <a href="#">
+                            <img src="images/movies/medium/dune.jpg" alt="movie-item small">
+                            <div class="on-top-elements medium">
+                                <h2>Дюна</h2>
+                                <ul class="chips-list">
+                                    <li class="chips-element small science-fiction">Фантастика</li>
+                                    <li class="chips-element small action">Боевик</li>
+                                </ul>
+                            </div>
+                            <p class="chips-element small rating good">7.7</p>
+                        </a>
+                    </div>
+                    <div class="movie-item">
+                        <a href="#">
+                            <img src="images/movies/medium/joker.jpg" alt="movie-item small">
+                            <div class="on-top-elements medium">
+                                <h2>Джокер</h2>
+                                <ul class="chips-list">
+                                    <li class="chips-element small drama">Драма</li>
+                                    <li class="chips-element small criminal">Криминал</li>
+                                </ul>
+                            </div>
+                            <p class="chips-element small rating great">8.0</p>
+                        </a>
+                    </div>
+                    <div class="movie-item">
+                        <a href="#">
+                            <img src="images/movies/medium/soul.jpg" alt="movie-item small">
+                            <div class="on-top-elements medium">
+                                <h2>Душа</h2>
+                                <ul class="chips-list">
+                                    <li class="chips-element small fantasy">Фэнтези</li>
+                                    <li class="chips-element small comedy">Комедия</li>
+                                </ul>
+                            </div>
+                            <p class="chips-element small rating great">8.4</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="movies-carousel">
+                <div class="title-block">
+                    <h2>Фильмы</h2>
+                    <a href="#">
+                        <span class="all-content">
+                            <p>смотреть все</p>
+                            <img src="Icons/right-arrow.png" alt="see-all">
+                        </span>
+                    </a>
+                </div>
+                <div class="movies-container medium">
+                    <div class="movie-item">
+                        <a href="#">
+                            <img src="images/movies/medium/dune.jpg" alt="movie-item small">
+                            <div class="on-top-elements medium">
+                                <h2>Дюна</h2>
+                                <ul class="chips-list">
+                                    <li class="chips-element small science-fiction">Фантастика</li>
+                                    <li class="chips-element small action">Боевик</li>
+                                </ul>
+                            </div>
+                            <p class="chips-element small rating good">7.7</p>
+                        </a>
+                    </div>
+                    <div class="movie-item">
+                        <a href="#">
+                            <img src="images/movies/medium/joker.jpg" alt="movie-item small">
+                            <div class="on-top-elements medium">
+                                <h2>Джокер</h2>
+                                <ul class="chips-list">
+                                    <li class="chips-element small drama">Драма</li>
+                                    <li class="chips-element small criminal">Криминал</li>
+                                </ul>
+                            </div>
+                            <p class="chips-element small rating great">8.0</p>
+                        </a>
+                    </div>
+                    <div class="movie-item">
+                        <a href="#">
+                            <img src="images/movies/medium/soul.jpg" alt="movie-item small">
+                            <div class="on-top-elements medium">
+                                <h2>Душа</h2>
+                                <ul class="chips-list">
+                                    <li class="chips-element small fantasy">Фэнтези</li>
+                                    <li class="chips-element small comedy">Комедия</li>
+                                </ul>
+                            </div>
+                            <p class="chips-element small rating great">8.4</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="sections">
+                <div class="section">
+                    <h3>Разделы</h3>
+                    <div class="section-content">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Фильмы</a></li>
+                            <li><a href="">Сериалы</a></li>
+                            <li><a href="">ТВ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3>Помощь</h3>
+                    <div class="section-content">
+                        <ul>
+                            <li><a href="">Справка</a></li>
+                            <li><a href="">Отправить сообщение</a></li>
+                            <li><a href="">Пользовательское сообщение</a></li>
+                            <li><a href="">Политика конфиденциальности</a></li>
+                            <li><a href="">Политика обработки файлов cookie</a></li>
+                            <li><a href="">8 800 555-53-53</a></li>
+                            <li><a href="">help@movee.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3>Служба поддержки</h3>
+                    <div class="section-content">
+                        <p>Мы всегда готовы вам помочь. <br>
+                            Наши операторы онлайн 24/7</p>
+                        <a href="#" class="button">Написать в чате</a>
+                        <div class="small-buttons">
+                            <a href="#" class="button"><img src="Icons/email.png" alt="email"></a>
+                            <a href="#" class="button"><img src="Icons/telephone.png" alt="email"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="section">
+                    <h3>Будь в курсе новых событий!</h3>
+                    <div class="section-content">
+                        <div class="social-medias">
+                            <button class="button3" type="button"><img src="icons/vk.png" alt="vk"></button>
+                            <button class="button3" type="button"><img src="icons/telegram.png" alt="telegram"></button>
+                            <button class="button3" type="button"><img src="icons/ok.png" alt="ok"></button>
+                            <button class="button3" type="button"><img src="icons/x.png" alt="x"></button>
+                            <button class="button3" type="button"><img src="icons/youtube.png" alt="youtube"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

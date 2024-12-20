@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пробный период 14 дней!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subscription.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/png" href="Icons/movee.png">
+</head>
+<body>
+    <div id="centered-block">
+        <header>
+            <nav id="header-menu">
+                <div class="nav-left-side">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+
+                    <div class="logo">
+                        <img src="Icons/movee.png" alt="">
+                        <p>movee</p>
+                    </div>
+                    <ul class="menu-block">
+                        <li class="menu-element selected"><a href="index.html">Главная</a></li>
+                        <li class="menu-element"><a href="movies.html">Фильмы</a></li>
+                        <li class="menu-element"><a href="#">Сериалы</a></li>
+                        <li class="menu-element"><a href="#">ТВ</a></li>
+                    </ul>
+                </div>
+                <div class="centered-search">
+                    <img src="Icons/search.png" alt="">
+                    <p>Фильмы, сериалы и т.д.</p>
+                </div>
+                <div class="nav-right-side">
+                    <div class="search">
+                        <img src="Icons/search.png" alt="">
+                        <p>Фильмы, сериалы и т.д.</p>
+                    </div>
+                    <div class="search small">
+                        <img src="Icons/search.png" alt="">
+                    </div>
+                    <button class="button2 subsc" type="button" onclick="document.location='subscription.html'">
+                        <img src="Icons/subscription.png" alt="subscription">
+                        <p>Месяц за 1&#x20bd;</p>
+                    </button>
+                    <button class="button3 subsc" type="button" onclick="document.location='subscription.html'">
+                        <img src="Icons/subscription.png" alt="subscription">
+                    </button>
+
+                    <div class="cart">
+                        <button class="button5" type="button">
+                            <img src="Icons/cart.png" alt="cart">
+                        </button>
+
+                        <div class="cart-popup">
+                            <h3>Фильмы в корзине</h3>
+                            <div id="cart">
+                                <div class="movie-card">
+                                    <div class="card-info">
+                                        <img src="Icons/bag.png" alt="bag">
+                                        <span>
+                                            <p>Название фильма</p>
+                                            <p>Стоимость</p>
+                                        </span> 
+                                    </div>
+                                    <div class="card-manipulations">
+                                        <button class="button3" type="button"><img src="Icons/trash-can.png" alt="remove"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-manipulations">
+                                <p id="total-cost">Общая стоимость</p>
+
+                                <button class="button2" type="button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notifications">
+                        <button class="button5" type="button">
+                            <img src="Icons/notification.png" alt="notification">
+                        </button>
+                        <div class="popup-window">
+                            <ul>
+                                <li>
+                                    <p>Оформите подписку и смотрите все фильмы!</p>
+                                    <button class="button1" type="button" onclick="document.location='sign-in.html'">Оформить подписку</button>
+                                </li>
+                                <li><p>Смотрите новинки в лучшем качестве!</p></li>
+                            </ul>
+                            <a href="#">Смотреть все уведомления</a>
+                        </div>
+                    </div>
+
+                    <div class="account">
+                        <a href="sign-in.html">
+                            <img src="Icons/account.png" alt="account">
+                            <p>Войти</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="burger-options">
+                <nav class="sections">
+                    <div class="option-column">
+                        <h2><a href="index.html">Главная</a></h2>
+                    </div>
+                    <div class="option-column">
+                        <h2><a href="movies.html">Фильмы</a></h2>
+                        <ul class="collections">
+                            <li><a href="#">Топ 100 отличных фильмов</a></li>
+                            <li><a href="#">Топ 10 популярных комедий</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Скоро выйдут</a></li>
+                        </ul>
+                    </div>
+                    <div class="option-column">
+                        <h2><a href="#">Сериалы</a></h2>
+                        <ul class="collections">
+                            <li><a href="#">Топ 100 отличных сериалов</a></li>
+                            <li><a href="#">Топ 10 популярных сериалов</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Скоро выйдут</a></li>
+                        </ul>
+                    </div>
+                    <div class="option-column">
+                        <h2><a href="#">ТВ</a></h2>
+                        <ul class="collections">
+                            <li><a href="#">Что сейчас идёт</a></li>
+                            <li><a href="#">Популярные каналы</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Реалити-шоу</a></li>
+                        </ul>
+                    </div>
+                    <div class="option-column">
+                        <h2><a href="#">Жанры</a></h2>
+                        <ul class="collections">
+                            <li><a href="#">Топ жанров</a></li>
+                            <li><a href="#">Популярные</a></li>
+                            <li><a href="#">Необычное</a></li>
+                            <li><a href="#">Лучшие драмы</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="subsc-title-block">
+                <div class="premium">
+                    <img src="Icons/crown.png" alt="crown">
+                    <p>Movee Gold</p>
+                </div>
+                <h1>С подпиской на Movee вы получите библиотеку тысяч фильмов,<br>сериалов и многого другого!</h1>
+                <h2>Выберите свой план:</h2>
+            </div>
+    
+            <div class="plans">
+                <div class="plan-card">
+                    <div class="top-items">
+                        <div class="card-title">
+                            <h3>Базовый</h3>
+                            <span><p>0&#x20bd;</p><p>/месяц</p></span>
+                        </div>
+                        <div class="subsc-features">
+                            <h4>Особенности</h4>
+                            <ul>
+                                <li>
+                                    <img src="Icons/check.png" alt="check">
+                                    <p>Просмотр фильмов, не требующих подписки</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/cross.png" class="cross" alt="cross">
+                                    <p>Платные фильмы</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/cross.png" class="cross" alt="cross">
+                                    <p>Создание коллекций фильмов</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/cross.png" class="cross" alt="cross">
+                                    <p>Доступ к премиум ТВ каналам</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="button4 choosen" type="button">
+                        <p>Выбрано</p>
+                        <img src="Icons/checked.png" alt="checked">
+                    </button>
+                </div>
+                <div class="plan-card">
+                    <div class="top-items">
+                        <div class="plan-title">
+                            <div class="card-title">
+                                <h3>Плюс</h3>
+                                <span><p>199&#x20bd;</p><p>/месяц</p></span>
+                            </div>
+                            <div class="popular-plan">
+                                <p>Популярный</p>
+                            </div>
+                        </div>
+                        
+                        <div class="subsc-features">
+                            <h4>Особенности</h4>
+                            <ul>
+                                <li>
+                                    <img src="Icons/check.png" alt="check">
+                                    <p>Просмотр фильмов, не требующих подписки</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/check.png" alt="check">
+                                    <p>Платные фильмы</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/cross.png" class="cross" alt="cross">
+                                    <p>Создание коллекций фильмов</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/cross.png" class="cross" alt="cross">
+                                    <p>Доступ к премиум ТВ каналам</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="button4" type="button">
+                        <p>Выбрать</p>
+                        <img src="Icons/subscription.png" alt="subscription">
+                    </button>
+                </div>
+                <div class="plan-card">
+                    <div class="top-items">
+                        <div class="card-title">
+                            <h3>Gold</h3>
+                            <span><p>399&#x20bd;</p><p>/месяц</p></span>
+                        </div>
+                        <div class="subsc-features">
+                            <h4>Особенности</h4>
+                            <ul>
+                                <li>
+                                    <img src="Icons/check.png" alt="check">
+                                    <p>Просмотр фильмов, не требующих подписки</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/check.png" alt="check">
+                                    <p>Платные фильмы</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/check.png" alt="check">
+                                    <p>Создание коллекций фильмов</p>
+                                </li>
+                                <li>
+                                    <img src="Icons/check.png" alt="check">
+                                    <p>Доступ к премиум ТВ каналам</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="button4" type="button">
+                        <p>Выбрать</p>
+                        <img src="Icons/subscription.png" alt="subscription">
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войдите в аккаунт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <div id="centered-block">
+        <main>
+            <div class="user-form">
+                <div class="header-menu">
+                    <a class="button-icon" href="index.html"><img src="Icons/back-arrow.png" alt="back"></a>
+                    <div class="logo sign">
+                        <img src="Icons/movee.png" alt="">
+                        <p>movee</p>
+                    </div>
+                </div>
+                
+                <form action="" method="post" autocomplete="on">
+                    <div class="sign-in-methods">
+                        <input class="custom-radio" type="radio" name="sign-in-type" id="telephone" value="telephone" checked>
+                        <label for="telephone">Телефон</label>
+                        <input class="custom-radio" type="radio" name="sign-in-type" id="email" value="email">
+                        <label for="email">Почта</label>
+                    </div>
+    
+                    <p>Введите номер телефона</p>
+                    <div class="user-sign-in-field"><label><input type="tel" placeholder="+7"></label></div>
+                    <div class="main-buttons">
+                        <button class="button-form full-width" type="submit" name="enter">Войти</button>
+                        <button class="button-form bordered" type="button" onclick="askRegistration()" onclick="document.location='sign-up.html'">Зарегистрироваться</button>
+                    </div>
+                    <div class="alternative-buttons">
+                        <button class="button-form bordered" type="submit" name="enter">QR-код</button>
+                        <button class="button-form bordered" onclick="askLogin()" type="button">Другое</button>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>

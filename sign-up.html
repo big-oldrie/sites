@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание аккаунта</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="captcha.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="icon" type="image/png" href="Icons/movee.png">
+</head>
+<body>
+    <div id="centered-block">
+        <main>
+            <section class="user-form">
+                <div class="header-menu">
+                    <a class="button-icon" href="sign-in.html"><img src="Icons/back-arrow.png" alt="back"></a>
+                    <div class="logo sign">
+                        <img src="Icons/movee.png" alt="">
+                        <p>movee</p>
+                    </div>
+                </div>
+                
+                <form method="post" autocomplete="on">    
+                    <p>Введите номер телефона или почту</p>
+                    <div class="user-sign-in-field"><label><input type="text" placeholder="Почта или номер"></label></div>
+                    <p>Имя пользователя</p>
+                    <div class="user-sign-in-field"><label><input type="text" placeholder="Придумайте имя пользователя"></label></div>
+                    <p>Пароль</p>
+                    <div class="user-sign-in-field"><label><input type="password" placeholder="Придумайте пароль"></label></div>
+                    <div class="user-sign-in-field"><label><input type="password" placeholder="Повторите пароль"></label></div>
+                    <button class="button-form" id="open-popup" type="button" name="enter">Зарегистрироваться</button>
+                    
+                </form>
+                <div class="captcha-block" id="popup">
+                    <div class="input_field captch_box">
+                        <input type="text" value="" disabled />
+                        <button class="refresh_button">
+                          <i class="fa-solid fa-rotate-right"></i>
+                        </button>
+                      </div>
+                      <div class="input_field captch_input">
+                        <input type="text" placeholder="Enter captcha" />
+                      </div>
+                      <div class="message">Entered captcha is correct</div>
+                      <button class="input_field button disabled">Проверить</button>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+
+    <script src="sign-up.js"></script>
+    <script src="captcha.js"></script>
+</body>
+</html>
