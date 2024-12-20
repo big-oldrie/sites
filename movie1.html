@@ -15,14 +15,14 @@
                     <div class="burger">
                         <span></span>
                     </div>
-    
+
                     <div class="logo">
                         <img src="Icons/movee.png" alt="">
                         <p>movee</p>
                     </div>
                     <ul class="menu-block">
                         <li class="menu-element"><a href="index.html">Главная</a></li>
-                        <li class="menu-element"><a href="#">Фильмы</a></li>
+                        <li class="menu-element"><a href="movies.html">Фильмы</a></li>
                         <li class="menu-element"><a href="#">Сериалы</a></li>
                         <li class="menu-element"><a href="#">ТВ</a></li>
                     </ul>
@@ -39,36 +39,67 @@
                     <div class="search small">
                         <img src="Icons/search.png" alt="">
                     </div>
-                    <button class="button2" type="button" onclick="document.location='subscription.html'">
+                    <button class="button2 subsc" type="button" onclick="document.location='subscription.html'">
                         <img src="Icons/subscription.png" alt="subscription">
                         <p>Месяц за 1&#x20bd;</p>
                     </button>
-    
+                    <button class="button3 subsc" type="button" onclick="document.location='subscription.html'">
+                        <img src="Icons/subscription.png" alt="subscription">
+                    </button>
+
+                    <div class="cart">
+                        <button class="button5" type="button">
+                            <img src="Icons/cart.png" alt="cart">
+                        </button>
+
+                        <div class="cart-popup">
+                            <h3>Фильмы в корзине</h3>
+                            <div id="cart">
+                                <div class="movie-card">
+                                    <div class="card-info">
+                                        <img src="Icons/bag.png" alt="bag">
+                                        <span>
+                                            <p>Название фильма</p>
+                                            <p>Стоимость</p>
+                                        </span> 
+                                    </div>
+                                    <div class="card-manipulations">
+                                        <button class="button3" type="button"><img src="Icons/trash-can.png" alt="remove"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-manipulations">
+                                <p id="total-cost">Общая стоимость</p>
+
+                                <button class="button2" type="button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="notifications">
-                        <a href="#">
+                        <button class="button5" type="button">
                             <img src="Icons/notification.png" alt="notification">
-                        </a>
+                        </button>
                         <div class="popup-window">
                             <ul>
                                 <li>
                                     <p>Оформите подписку и смотрите все фильмы!</p>
-                                    <button class="button1" type="button" onclick="document.location='subscription.html'">Оформить подписку</button>
+                                    <button class="button1" type="button" onclick="document.location='sign-in.html'">Оформить подписку</button>
                                 </li>
-                                <li>Смотрите новинки в лучшем качестве!</li>
+                                <li><p>Смотрите новинки в лучшем качестве!</p></li>
                             </ul>
                             <a href="#">Смотреть все уведомления</a>
                         </div>
                     </div>
-    
+
                     <div class="account">
                         <a href="sign-in.html">
-                            <img src="Icons/account.png" alt="">
+                            <img src="Icons/account.png" alt="account">
                             <p>Войти</p>
                         </a>
                     </div>
                 </div>
             </nav>
-    
+
             <div class="burger-options">
                 <nav class="sections">
                     <div class="option-column">
@@ -114,7 +145,7 @@
             </div>
         </header>
         <main>
-            <h1>Стражи галактики. Часть 3</h1>
+            <h1 class="movie-h1">Стражи галактики. Часть 3</h1>
             <div class="movie-window">
                 <div class="movie-video">
                     <iframe src="https://rutube.ru/play/embed/567eb24a98a5b65583646869bad4b7bf" frameBorder="0"
